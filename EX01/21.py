@@ -14,4 +14,4 @@ print(f"최대 메모리 사용량: {peak / 10 ** 6} MB")
 tracemalloc.stop() # 메모리 할당 추적 중지
 
 traced = tracemalloc.get_tracemalloc_memory()
-print(traced / 10 ** 6)
+print(traced / 10 ** 6) # 추적 하는데 사용한 메모리 용량

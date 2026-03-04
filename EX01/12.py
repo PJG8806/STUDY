@@ -11,5 +11,5 @@ if __name__ == '__main__':
     p = Process(target=send, args=(child,))
     p.start()
     print('기존 프로세스 아이디 :', os.getpid())
-    print(parent.recv())
+    print(parent.recv()) # 여기서 반환해서 출력
     p.join() # 프로세스 종료까지 기다린다
